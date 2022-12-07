@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Projet/src" modelPluginID="Projet" modelName="LDP"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>LDP.ecore</foreignModel>
+  <genPackages prefix="LDP" disposableProviderFactory="true" ecorePackage="LDP.ecore#/">
+    <genClasses ecoreClass="LDP.ecore#//Personne">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Personne/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Personne/prenom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Personne/adresse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Personne/cin"/>
+    </genClasses>
+    <genClasses ecoreClass="LDP.ecore#//Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LDP.ecore#//Client/conseiller"/>
+    </genClasses>
+    <genClasses ecoreClass="LDP.ecore#//Employe">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Employe/salaire"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Employe/dateEmbauche"/>
+    </genClasses>
+    <genClasses ecoreClass="LDP.ecore#//CompteBancaire">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//CompteBancaire/numeroC"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//CompteBancaire/solde"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//CompteBancaire/dateOuverture"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LDP.ecore#//CompteBancaire/appartient"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LDP.ecore#//CompteBancaire/propriétaire"/>
+    </genClasses>
+    <genClasses ecoreClass="LDP.ecore#//Agence">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Agence/numeroA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Agence/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Agence/adresse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Agence/ville"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Agence/codePostal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LDP.ecore#//Agence/contientEmploye"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LDP.ecore#//Agence/contientBanque"/>
+    </genClasses>
+    <genClasses ecoreClass="LDP.ecore#//Banque">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Banque/numeroB"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Banque/capital"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LDP.ecore#//Banque/nom"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

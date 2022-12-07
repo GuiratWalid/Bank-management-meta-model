@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LDP:Agence
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LDP=" platform:/resource/projet/metamodels/LDP.ecore"
+    xsi:schemaLocation=" platform:/resource/projet/metamodels/LDP.ecore ../metamodels/LDP.ecore"
+    numeroA="ATB16"
+    nom="ATB"
+    adresse="Sousse"
+    ville="Khzema"
+    codePostal="4000">
+  <contientEmploye
+      nom="Boughammoura"
+      prenom="Khaled"
+      adresse="Khzema"
+      cin="12823290"
+      salaire="1700.0"
+      dateEmbauche="0034-07-13T00:00:00.000+0100"/>
+  <contientEmploye
+      nom="Souguir"
+      prenom="Adem"
+      adresse="Akouda"
+      cin="12345678"
+      salaire="1500.0"
+      dateEmbauche="0034-11-05T00:00:00.000+0100"/>
+  <contientEmploye
+      nom="Ben salah"
+      prenom="Iheb"
+      adresse="Kalaa Kebira"
+      cin="15236487"
+      salaire="1000.0"
+      dateEmbauche="0020-12-02T00:00:00.000+0100"/>
+  <contientBanque
+      numeroB="ATB1605"
+      capital="150000"
+      nom="Banque Hay tijeri"/>
+  <contientBanque
+      numeroB="ATB1608"
+      capital="25639"
+      nom="ATB akouda"/>
+</LDP:Agence>
